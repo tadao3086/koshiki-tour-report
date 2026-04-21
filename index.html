@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///Users/hiraharatadao/Downloads/index.html -->
+<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>こしき号（仮） 全国ツアー 前編レポート | こしきブリュワリー</title>
+<meta name="description" content="鹿児島・甑島発のクラフトビール「こしきブリュワリー」全国ツアー前編の軌跡。">
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="file:///Users/hiraharatadao/Downloads/%E3%81%93%E3%81%97%E3%81%8D%E5%8F%B7%EF%BC%88%E4%BB%AE%EF%BC%89%20%E5%85%A8%E5%9B%BD%E3%83%84%E3%82%A2%E3%83%BC%20%E5%89%8D%E7%B7%A8%E3%83%AC%E3%83%9B%E3%82%9A%E3%83%BC%E3%83%88%20_%20%E3%81%93%E3%81%97%E3%81%8D%E3%83%95%E3%82%99%E3%83%AA%E3%83%A5%E3%83%AF%E3%83%AA%E3%83%BC_files/css2" rel="stylesheet">
+
+<style>
+:root {
+  --sky: #6ec7ec;
+  --sky-deep: #3aa3cf;
+  --teal: #20b2a7;
+  --teal-deep: #0f8f86;
+  --yellow: #f9dd3a;
+  --yellow-deep: #e8c214;
+  --ink: #0f1b2d;
+  --ink-soft: #2c3a4d;
+  --paper: #ffffff;
+  --cream: #fcf8ee;
+  --coral: #ff6b4a;
+  --shadow: 0 6px 0 var(--ink);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.75;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.poster { font-family: 'RocknRoll One', sans-serif; }
+.pop { font-family: 'Yusei Magic', sans-serif; }
+.display { font-family: 'Anton', sans-serif; letter-spacing: 0.05em; }
+
+/* ===== HALFTONE ===== */
+.halftone {
+  background-image: radial-gradient(circle, rgba(15, 27, 45, 0.18) 1px, transparent 1.4px);
+  background-size: 6px 6px;
+}
+.halftone-light {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.35) 1px, transparent 1.4px);
+  background-size: 5px 5px;
+}
+
+/* ===== NAV ===== */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.7rem 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid var(--yellow);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
+.topbar .logo-mini {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.15em;
+}
+.topbar .logo-mini span {
+  background: var(--yellow);
+  color: var(--ink);
+  padding: 2px 6px;
+  font-weight: 900;
+}
+.topbar .trip {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.2em;
+  color: var(--yellow);
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, #8dd4ef 0%, #6ec7ec 45%, #3aa3cf 100%);
+  overflow: hidden;
+  padding: 3rem 5vw 6rem;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.25) 1px, transparent 1.5px);
+  background-size: 8px 8px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: -5%;
+  right: -5%;
+  height: 60px;
+  background: var(--cream);
+  transform: rotate(-2deg);
+  z-index: 2;
+}
+
+.hero-grid {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  min-height: calc(100vh - 9rem);
+}
+
+.hero-left {
+  padding-top: 2rem;
+}
+
+.hero-tag {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--yellow);
+  padding: 0.4rem 1.2rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.2rem;
+  transform: rotate(-1.5deg);
+}
+
+.hero-eyebrow {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+  color: var(--ink);
+  background: var(--paper);
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  margin-bottom: 0.6rem;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.hero-title {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: clamp(2.8rem, 8vw, 6.5rem);
+  line-height: 1.0;
+  color: var(--paper);
+  letter-spacing: -0.01em;
+  text-shadow:
+    -2px -2px 0 var(--ink),
+     2px -2px 0 var(--ink),
+    -2px  2px 0 var(--ink),
+     2px  2px 0 var(--ink),
+     6px 6px 0 var(--ink);
+  margin-bottom: 1.5rem;
+}
+.hero-title .line2 { color: var(--yellow); }
+.hero-title .kari {
+  font-size: 0.5em;
+  color: var(--coral);
+  display: inline-block;
+  transform: translateY(-0.3em);
+}
+
+.hero-sub-line {
+  display: inline-block;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0.4rem 1rem;
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  margin: 0.3rem 0;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.hero-lead {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--paper);
+  padding: 1.3rem 1.5rem;
+  border: 3px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--ink);
+  max-width: 560px;
+  line-height: 1.9;
+  font-weight: 500;
+}
+
+/* HERO RIGHT: TOUR MAP SHOWCASE */
+.hero-right {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+.map-frame {
+  position: relative;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  padding: 1rem 1rem 1.2rem;
+  box-shadow: 10px 10px 0 var(--ink), 10px 10px 0 2px var(--yellow);
+  transform: rotate(1.2deg);
+  transition: transform 0.3s ease;
+}
+.map-frame:hover { transform: rotate(0deg) translateY(-4px); }
+
+.map-frame::before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 120px;
+  height: 28px;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(249, 221, 58, 0.9),
+    rgba(249, 221, 58, 0.9) 6px,
+    rgba(232, 194, 20, 0.9) 6px,
+    rgba(232, 194, 20, 0.9) 12px
+  );
+  border: 2px solid var(--ink);
+  z-index: 3;
+}
+
+.map-label {
+  position: absolute;
+  top: -22px;
+  right: -20px;
+  background: var(--coral);
+  color: var(--paper);
+  padding: 0.5rem 1rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+  transform: rotate(8deg);
+  z-index: 4;
+}
+
+.map-caption-top {
+  position: absolute;
+  top: -14px;
+  left: 1rem;
+  background: var(--ink);
+  color: var(--yellow);
+  padding: 0.25rem 0.8rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  z-index: 4;
+}
+
+.map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--ink);
+}
+
+.map-caption-bottom {
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  font-family: 'Anton', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: var(--ink);
+  padding: 0 0.3rem;
+}
+.map-caption-bottom .dates { display: flex; align-items: center; gap: 0.4rem; }
+.map-caption-bottom .dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--coral);
+  border: 1.5px solid var(--ink);
+}
+
+.map-sub {
+  position: relative;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.map-chip {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.9rem 1rem;
+  border: 3px solid var(--ink);
+  box-shadow: 4px 4px 0 var(--yellow);
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  position: relative;
+}
+.map-chip.yellow {
+  background: var(--yellow);
+  color: var(--ink);
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.map-chip .num {
+  display: block;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.8rem;
+  color: var(--coral);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+.map-chip.yellow .num { color: var(--ink); }
+
+/* ===== SECTION LAYOUTS ===== */
+section { position: relative; padding: 6rem 5vw; }
+
+.section-title-block {
+  margin-bottom: 4rem;
+  position: relative;
+}
+.section-kicker {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--yellow);
+  padding: 0.3rem 0.9rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.25em;
+  margin-bottom: 0.8rem;
+  transform: rotate(-1deg);
+}
+.section-h {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: clamp(2rem, 5.5vw, 4rem);
+  line-height: 1.1;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+  position: relative;
+}
+.section-h .hilite {
+  background: var(--yellow);
+  padding: 0 0.3em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.section-desc {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--ink-soft);
+  max-width: 640px;
+  line-height: 1.85;
+}
+
+/* ===== SECTION 1: MOVES ===== */
+.moves {
+  background: var(--cream);
+  padding-top: 3rem;
+}
+
+.moves-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+.move {
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  padding: 1.8rem;
+  position: relative;
+  box-shadow: 6px 6px 0 var(--ink);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.move:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--ink);
+}
+
+.move .badge {
+  position: absolute;
+  top: -14px;
+  left: 1.2rem;
+  background: var(--yellow);
+  border: 2.5px solid var(--ink);
+  padding: 0.2rem 0.8rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  color: var(--ink);
+  transform: rotate(-2deg);
+}
+.move .badge.hot { background: var(--coral); color: var(--paper); }
+.move .badge.media { background: var(--teal); color: var(--paper); }
+.move .badge.sky { background: var(--sky); color: var(--ink); }
+
+.move h3 {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 1.3rem;
+  margin: 0.8rem 0 0.8rem;
+  line-height: 1.4;
+  color: var(--ink);
+}
+.move p {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin-bottom: 1.1rem;
+  font-weight: 500;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.xbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  padding: 0.5rem 0.9rem;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  border: 2.5px solid var(--ink);
+  transition: all 0.15s;
+}
+.xbtn:hover {
+  background: var(--yellow);
+  color: var(--ink);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.xbtn.yellow { background: var(--yellow); color: var(--ink); }
+.xbtn.yellow:hover { background: var(--ink); color: var(--yellow); }
+.xbtn.coral { background: var(--coral); color: var(--paper); border-color: var(--ink); }
+.xbtn .icon { font-size: 1rem; font-weight: 900; }
+
+.m-wide { grid-column: span 7; }
+.m-half { grid-column: span 5; }
+.m-4 { grid-column: span 4; }
+.m-8 { grid-column: span 8; }
+
+/* sticker note */
+.move .sticker-note {
+  position: absolute;
+  top: -18px;
+  right: -10px;
+  background: var(--sky);
+  color: var(--ink);
+  padding: 0.3rem 0.7rem;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 0.85rem;
+  border: 2.5px solid var(--ink);
+  transform: rotate(6deg);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+
+/* ===== SECTION 2: ROUTE ===== */
+.route {
+  background:
+    linear-gradient(180deg, #20b2a7 0%, #0f8f86 100%);
+  color: var(--paper);
+  position: relative;
+  overflow: hidden;
+}
+.route::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1.4px);
+  background-size: 7px 7px;
+  pointer-events: none;
+}
+
+.route .section-kicker { background: var(--yellow); color: var(--ink); }
+.route .section-h { color: var(--paper); }
+.route .section-h .hilite { background: var(--yellow); color: var(--ink); }
+.route .section-desc { color: rgba(255,255,255,0.9); }
+
+.wave-divider-top {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  line-height: 0;
+}
+
+.tl {
+  position: relative;
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.tl-item {
+  background: var(--paper);
+  color: var(--ink);
+  padding: 1.8rem 2rem;
+  border: 3px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+.tl-item:nth-child(odd) { margin-right: 10%; }
+.tl-item:nth-child(even) { margin-left: 10%; }
+
+.tl-num {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--teal);
+  background: var(--yellow);
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  border: 3px solid var(--ink);
+  box-shadow: 3px 3px 0 var(--ink);
+  transform: rotate(-3deg);
+  flex-shrink: 0;
+}
+
+.tl-item h3 {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+.tl-item p {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+}
+
+/* ===== SECTION 3-5: STOPS ===== */
+.stop {
+  background: var(--cream);
+}
+
+.stop-banner {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 1.5rem 2rem;
+  margin: 0 -5vw 3rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  border-top: 3px solid var(--yellow);
+  border-bottom: 3px solid var(--yellow);
+}
+
+.stop-banner .stopnum {
+  font-family: 'Anton', sans-serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 0.9;
+  color: var(--yellow);
+  letter-spacing: 0.02em;
+}
+.stop-banner h2 {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  color: var(--paper);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+.stop-banner h2 .en {
+  display: block;
+  font-family: 'Anton', sans-serif;
+  font-size: 0.4em;
+  color: var(--teal);
+  letter-spacing: 0.25em;
+  margin-top: 0.3em;
+}
+.stop-banner .emoji {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 1.2rem;
+  background: var(--yellow);
+  color: var(--ink);
+  padding: 0.5rem 1rem;
+  transform: rotate(3deg);
+  white-space: nowrap;
+}
+
+.stop-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+.story {
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  padding: 1.8rem;
+  box-shadow: 6px 6px 0 var(--ink);
+  position: relative;
+}
+.story.rotl { transform: rotate(-0.6deg); }
+.story.rotr { transform: rotate(0.5deg); }
+
+.story h3 {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+}
+.story p {
+  font-size: 0.93rem;
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.story .pop-tag {
+  position: absolute;
+  top: -14px;
+  right: 1.2rem;
+  background: var(--yellow);
+  padding: 0.2rem 0.8rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  border: 2.5px solid var(--ink);
+  box-shadow: 2px 2px 0 var(--ink);
+  transform: rotate(3deg);
+}
+.story .pop-tag.coral { background: var(--coral); color: var(--paper); }
+.story .pop-tag.sky { background: var(--sky); }
+.story .pop-tag.teal { background: var(--teal); color: var(--paper); }
+
+.s-2 { grid-column: span 4; }
+.s-3 { grid-column: span 6; }
+.s-4 { grid-column: span 8; }
+.s-full { grid-column: span 12; }
+
+.pullquote {
+  grid-column: span 12;
+  background: var(--yellow);
+  padding: 3rem 2.5rem;
+  border: 3px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--ink);
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: clamp(1.3rem, 2.8vw, 1.9rem);
+  line-height: 1.6;
+  position: relative;
+  text-align: center;
+}
+.pullquote::before,
+.pullquote::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 3px;
+  background: var(--ink);
+}
+.pullquote::before { left: 20px; transform: rotate(-60deg); }
+.pullquote::after { right: 20px; transform: rotate(60deg); }
+.pullquote small {
+  display: block;
+  margin-top: 1rem;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+
+.note-box {
+  background: var(--sky);
+  border: 3px solid var(--ink);
+  padding: 1.3rem 1.5rem;
+  margin-top: 1.2rem;
+  position: relative;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+.note-box .tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  background: var(--yellow);
+  padding: 0.2rem 1.5rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  border: 2px solid var(--ink);
+}
+
+.bullet-pop {
+  list-style: none;
+  padding: 0;
+}
+.bullet-pop li {
+  padding: 0.4rem 0 0.4rem 2rem;
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+  line-height: 1.7;
+}
+.bullet-pop li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  top: 0.4rem;
+  color: var(--coral);
+  font-size: 1rem;
+}
+
+.stop-sanbon { background: linear-gradient(180deg, var(--cream) 0%, #fff5c4 100%); }
+.stop-ncolle { background: var(--cream); }
+.stop-aeon { background: linear-gradient(180deg, #fff5c4 0%, var(--cream) 100%); }
+
+/* ===== OUTRO ===== */
+.outro {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 7rem 5vw;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.outro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(249, 221, 58, 0.1) 1px, transparent 1.3px);
+  background-size: 9px 9px;
+  pointer-events: none;
+}
+
+.outro-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.outro .yell-tag {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--ink);
+  padding: 0.4rem 1.2rem;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.25em;
+  margin-bottom: 2rem;
+  transform: rotate(-2deg);
+}
+
+.outro h2 {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  color: var(--paper);
+}
+.outro h2 .hi { color: var(--yellow); }
+
+.outro p {
+  font-size: 1.05rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+  opacity: 0.92;
+}
+
+.next-card {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: var(--paper);
+  color: var(--ink);
+  display: inline-block;
+  border: 3px solid var(--yellow);
+  box-shadow: 8px 8px 0 var(--yellow);
+  transform: rotate(-1deg);
+}
+.next-card .lbl {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 0.3em;
+  font-size: 0.85rem;
+  color: var(--coral);
+  margin-bottom: 0.5rem;
+}
+.next-card .ttl {
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 1.5rem;
+}
+
+.signature {
+  margin-top: 2.5rem;
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 1.3rem;
+  color: var(--yellow);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: var(--yellow);
+  color: var(--ink);
+  padding: 2.5rem 5vw;
+  text-align: center;
+  border-top: 3px solid var(--ink);
+}
+footer .big-logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.3rem;
+}
+footer .sub { font-size: 0.9rem; margin-bottom: 0.5rem; }
+footer .credits { font-size: 0.75rem; opacity: 0.7; letter-spacing: 0.1em; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .map-frame { transform: rotate(0deg); }
+  .map-label { top: -18px; right: -10px; font-size: 0.85rem; padding: 0.4rem 0.8rem; }
+  .moves-grid, .stop-grid { grid-template-columns: repeat(6, 1fr); }
+  .m-wide, .m-half, .m-4, .m-8 { grid-column: span 6; }
+  .s-2 { grid-column: span 3; }
+  .s-3, .s-4 { grid-column: span 6; }
+  .tl-item:nth-child(odd), .tl-item:nth-child(even) { margin: 0; }
+  .stop-banner { grid-template-columns: 1fr; gap: 1rem; text-align: center; }
+  section { padding: 4rem 5vw; }
+}
+
+@media (max-width: 600px) {
+  .hero { padding: 2rem 5vw 4rem; }
+  .map-sub { grid-template-columns: 1fr; }
+  .moves-grid, .stop-grid { grid-template-columns: 1fr; }
+  .m-wide, .m-half, .m-4, .m-8, .s-2, .s-3, .s-4 { grid-column: span 1; }
+  .tl-item { grid-template-columns: 1fr; }
+  .tl-num { width: 60px; height: 60px; font-size: 2.3rem; }
+  .stop-banner { margin: 0 -5vw 2rem; padding-left: 5vw; padding-right: 5vw; }
+  .hero-title {
+    text-shadow:
+      -1.5px -1.5px 0 var(--ink),
+       1.5px -1.5px 0 var(--ink),
+      -1.5px  1.5px 0 var(--ink),
+       1.5px  1.5px 0 var(--ink),
+       4px 4px 0 var(--ink);
+  }
+}
+
+/* animations */
+@keyframes pop-in {
+  0% { opacity: 0; transform: translateY(20px) scale(0.95); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.hero-left > * { animation: pop-in 0.8s ease-out both; }
+.hero-tag { animation-delay: 0.1s; }
+.hero-eyebrow { animation-delay: 0.2s; }
+.hero-title { animation-delay: 0.3s; }
+.hero-lead { animation-delay: 0.6s; }
+.map-frame { animation: pop-in 0.9s 0.4s ease-out both; }
+.map-sub .map-chip:nth-child(1) { animation: pop-in 0.7s 0.7s ease-out both; }
+.map-sub .map-chip:nth-child(2) { animation: pop-in 0.7s 0.85s ease-out both; }
+</style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="logo-mini"><span>K</span>KOSHIKI BREWERY</div>
+  <div class="trip">● TOUR LOG / FIRST HALF</div>
+</div>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-grid">
+
+    <div class="hero-left">
+      <span class="hero-tag">REPORT VOL.01</span>
+      <div><span class="hero-eyebrow">とりあえず、まとめてみた。</span></div>
+
+      <h1 class="hero-title">
+        こしき号<span class="kari">（仮）</span><br>
+        <span class="line2">全国ツアー</span><br>
+        前編レポート
+      </h1>
+
+      <div>
+        <span class="hero-sub-line">鹿児島・甑島から、日本列島へ。</span>
+      </div>
+
+      <p class="hero-lead">
+        デジタルコミュニティから生まれたクラフトビール、こしきブリュワリー。<br>
+        離島発の挑戦が、ついに全国を駆け抜けました。<br>
+        応援してくれた皆さまへの感謝を込めて、ツアー前編の軌跡を記録します。
+      </p>
+    </div>
+
+    <div class="hero-right">
+
+      <!-- SUB CHIPS -->
+      <div class="map-sub">
+        <div class="map-chip yellow">
+          <span class="num">04</span>
+          訪問地、全国4都市を走破！
+        </div>
+        <div class="map-chip">
+          <span class="num">16+</span>
+          支援・応援してくれた仲間たち
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+
+<!-- ===== SECTION 1: MOVES ===== -->
+<section class="moves" id="moves">
+  <div class="section-title-block">
+    <span class="section-kicker">CHAPTER 01 / MOVES</span>
+    <h2 class="section-h">
+      関連Moveが、<br><span class="hilite">いっぱい！</span>
+    </h2>
+    <p class="section-desc">
+      ツアーの前後・道中で動いてくれた、クリエイター・媒体・コミュニティの皆さま。
+      ひとつひとつの「Move」が、こしき号（仮）の進路を明るくしてくれました。
+    </p>
+  </div>
+
+  <div class="moves-grid">
+
+    <article class="move m-wide">
+      <span class="badge hot">CM + GAME</span>
+      <span class="sticker-note">1haya さん！</span>
+      <h3>1hayaさんが、ショート動画（CM）＆<br>まさかのスマホゲームまで制作！</h3>
+      <p>
+        こしき号（仮）を題材にした一級品のクリエイティブ。
+        ショートムービーは公式サイトTOPページでもご覧いただけます。
+        スマホゲームまで仕込んでくださる愛と技術に、ただただ感謝。
+      </p>
+      <div class="link-row">
+        <a class="xbtn yellow" href="https://09969.jp/" target="_blank" rel="noopener">
+          <span class="icon">▶</span> 公式サイトでCMを見る
+        </a>
+        <a class="xbtn" href="https://x.com/1hayaDSGN/status/2043585297099936082?s=20" target="_blank" rel="noopener">
+          <span class="icon">𝕏</span> GAMEの投稿
+        </a>
+      </div>
+    </article>
+
+    <article class="move m-half">
+      <span class="badge sky">GINZA</span>
+      <h3>銀座クラフトビールミュージアム<br>337Aleさんに進出！</h3>
+      <p>
+        日本の中心・銀座。世界中から人が集まる場所へ。
+        広報担当とTonyで大盛り上がりのスペース配信をお楽しみください。
+      </p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/i/spaces/1MJgNgDooOWGL?s=20" target="_blank" rel="noopener">
+          <span class="icon">𝕏</span> SPACEを聴く
+        </a>
+      </div>
+    </article>
+
+    <article class="move m-4">
+      <span class="badge media">MEDIA</span>
+      <h3>くらげさんの<br>「くらげWEB3界隈<br>ニュース」で連日！</h3>
+      <p>
+        連日取り上げてくださいました。
+        <strong>Me-Moonともコラボ中！</strong>
+      </p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/yuru2_Kurage/status/2041992205758558304?s=20" target="_blank" rel="noopener">
+          <span class="icon">𝕏</span> コラボ投稿
+        </a>
+      </div>
+    </article>
+
+    <article class="move m-4">
+      <span class="badge media">OKINAWA</span>
+      <h3>ケイティさんが<br>沖縄のサミットで<br>事例紹介！</h3>
+      <p>
+        南城市「Tourism×Web3 Summit 2026」にて、
+        こしきブリュワリーの取り組みを発表してくださいました。
+      </p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/katie_meta/status/2039021700923400257?s=20" target="_blank" rel="noopener">
+          <span class="icon">𝕏</span> 投稿を見る
+        </a>
+      </div>
+    </article>
+
+    <article class="move m-4">
+      <span class="badge hot">SURPRISE!</span>
+      <span class="sticker-note">急遽開催</span>
+      <h3>にゃんとれさんが<br>「Nyanmaru Coin」<br>企画を急遽開催！</h3>
+      <p>
+        ツアーに合わせたサプライズ企画。
+        コミュニティの瞬発力に脱帽です。
+      </p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/e_links_k/status/2044627541739405641?s=20" target="_blank" rel="noopener">
+          <span class="icon">𝕏</span> 企画の投稿
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== SECTION 2: ROUTE ===== -->
+<section class="route" id="route">
+  <!-- 上部の波線 -->
+  <svg class="wave-divider-top" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 Q180,0 360,30 T720,30 T1080,30 T1440,30 L1440,0 L0,0 Z" fill="#fcf8ee"></path>
+  </svg>
+
+  <div class="section-title-block" style="padding-top: 2rem;">
+    <span class="section-kicker">CHAPTER 02 / ON THE ROAD</span>
+    <h2 class="section-h">
+      道中、<br><span class="hilite">いろいろ。</span>
+    </h2>
+    <p class="section-desc">
+      フェリーで本州へ。走って、止まって、見守られながら。
+      こしき号（仮）の移動中のエピソードたち。
+    </p>
+  </div>
+
+  <div class="tl">
+
+    <div class="tl-item">
+      <div class="tl-num">01</div>
+      <div>
+        <h3>ご支援くださった方たちのお名前が、<br>たくさんの方の目に。</h3>
+        <p>
+          道中、支援者の皆さまのお名前が多くの方に届いていきました。
+          見つけてくれた全ての方に、ありがとうございます。
+        </p>
+        <div class="link-row">
+          <a class="xbtn" href="https://x.com/vtmapida/status/2042826007292579885?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> 投稿 1</a>
+          <a class="xbtn" href="https://x.com/vtmapida/status/2044541064451920285?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> 投稿 2</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-num">02</div>
+      <div>
+        <h3>位置情報、バッチリ把握！</h3>
+        <p>
+          こしき号（仮）がいま、どこを走っているのか。
+          リアルタイムで追える体験も、応援の一部になっていました。
+        </p>
+        <div class="link-row">
+          <a class="xbtn" href="https://x.com/MYCmyc7077/status/2044491640400953758?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> 位置情報の投稿</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-num">03</div>
+      <div>
+        <h3>フェリー降りて、<br>即ピットイン！</h3>
+        <p>
+          本州上陸直後のリアル現場。
+          離島発のブリュワリーが、いよいよ全国を走り出した瞬間の記録です。
+        </p>
+        <div class="link-row">
+          <a class="xbtn" href="https://x.com/yuru2_Kurage/status/2041992205758558304?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> ピットインの様子</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SECTION 3: SANBON ===== -->
+<section class="stop stop-sanbon" id="sanbon">
+  <div class="stop-banner">
+    <div class="stopnum">03</div>
+    <h2>さんぼん <span class="en">STOP / SANBON</span></h2>
+    <div class="emoji">わちゃわちゃ！</div>
+  </div>
+
+  <div class="stop-grid">
+
+    <article class="story s-3 rotl">
+      <span class="pop-tag">SETUP</span>
+      <h3>わちゃわちゃ設営中！</h3>
+      <p>ツアー仲間と共に、手作りで会場を組み立てていく時間。</p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/budou_chan/status/2044966556292219125?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> 設営の様子</a>
+      </div>
+    </article>
+
+    <article class="story s-3 rotr">
+      <span class="pop-tag coral">LIVE!</span>
+      <h3>宣伝部長が現地中継スペース！</h3>
+      <p>さんぼん現地から宣伝部長が配信。臨場感ある音声で、その場の熱気をお届け。</p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/hioking2010/status/2045057691207545196?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> 中継投稿</a>
+      </div>
+    </article>
+
+    <article class="story s-2 rotl">
+      <span class="pop-tag sky">NEW!</span>
+      <h3>非公式キャラ、<br>爆誕。</h3>
+      <p>現場発の、まさかのキャラ誕生。コミュニティ発のユーモア炸裂。</p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/hioking2010/status/2041070787097145579?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> 爆誕の瞬間</a>
+      </div>
+    </article>
+
+    <article class="story s-2 rotr">
+      <span class="pop-tag teal">GIFT</span>
+      <h3>「αUマガジン」<br>を進呈！</h3>
+      <p>ご縁のあった方へ、αUマガジンをお届け。コラボの種がまたひとつ。</p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/hioking2010/status/2045127745257250861?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> 進呈の様子</a>
+      </div>
+    </article>
+
+    <article class="story s-2 rotl">
+      <span class="pop-tag">NEXT →</span>
+      <h3>次は大阪、<br>レッツゴー！</h3>
+      <p>さんぼん、Nコレを終えて、大阪へ。こしき号、順調に走り続けます。</p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/MYCmyc7077/status/2045721945921278019?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> 大阪へ向かう</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== SECTION 4: NCOLLE ===== -->
+<section class="stop stop-ncolle" id="ncolle">
+  <div class="stop-banner">
+    <div class="stopnum">04</div>
+    <h2>Nコレ <span class="en">STOP / N-COLLE</span></h2>
+    <div class="emoji">交流、たっぷり！</div>
+  </div>
+
+  <div class="stop-grid">
+
+    <div class="pullquote">
+      たくさんのWEB3界隈の方々と交流。<br>たのしかった！
+      <small>— 書ききれないほどの、出会いと会話の時間でした。</small>
+    </div>
+
+    <article class="story s-full rotl">
+      <span class="pop-tag coral">DOYA!!</span>
+      <h3>広報担当、イベントでドヤってきました！</h3>
+      <p>
+        すごい方々に混ざって、こしきブリュワリーの広報担当がイベントに登場。
+        離島発のクラフトビールの存在感を、しっかりとその場に刻んできました。
+      </p>
+      <div class="note-box">
+        <span class="tape">MEMO</span>
+        Nコレでの出会いと会話は、とても一度には書ききれません。<br>
+        後日あらためて、個別のエピソードをメルマガやブログでお届けしていきます。
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== SECTION 5: AEON ===== -->
+<section class="stop stop-aeon" id="aeon">
+  <div class="stop-banner">
+    <div class="stopnum">05</div>
+    <h2>イオン北花田店 <span class="en">STOP / AEON KITAHANADA</span></h2>
+    <div class="emoji">POPUP OPEN!</div>
+  </div>
+
+  <div class="stop-grid">
+
+    <article class="story s-3 rotl">
+      <span class="pop-tag">LAYOUT</span>
+      <h3>ポップアップ、<br>こんな感じ！</h3>
+      <p>
+        離島のビールが、都市部の売り場に並ぶ光景。
+        こしきブリュワリーのポップアップが展開されました。
+      </p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/hioking2010/status/2046020798595682647?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> レイアウトを見る</a>
+      </div>
+    </article>
+
+    <article class="story s-3 rotr">
+      <span class="pop-tag sky">ART+</span>
+      <h3>実は、<br>クラフトビール以外にも……</h3>
+      <p>
+        <strong>オリジナルラグ展示（made by ナファタ）</strong><br>
+        ビールだけじゃない、こしきコミュニティの多彩な創作物も同時展示。
+      </p>
+      <div class="link-row">
+        <a class="xbtn" href="https://x.com/nafata14/status/2046004980176523416?s=20" target="_blank" rel="noopener"><span class="icon">𝕏</span> ラグ展示の様子</a>
+      </div>
+    </article>
+
+    <article class="story s-full rotl">
+      <span class="pop-tag teal">ENCORE</span>
+      <h3>こしき号（仮）、再びピットイン！</h3>
+      <ul class="bullet-pop">
+        <li>イオン北花田店にて、こしき号（仮）の再ピットイン。</li>
+        <li><strong>MYCアートコレクション</strong>（非売品なのに！）が大好評。</li>
+        <li>販売目的ではない展示作品に、多くの方が足を止めてくださいました。</li>
+      </ul>
+      <div class="note-box">
+        <span class="tape">FIELD NOTE</span>
+        売り物じゃないのに、人が集まる——。<br>
+        これこそ、デジタルコミュニティ発のこしきブリュワリーならではの価値の形かもしれません。
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== OUTRO ===== -->
+<section class="outro">
+  <div class="outro-inner">
+    <span class="yell-tag">— 前編、ここまで。</span>
+    <h2>
+      支援も、拡散も、笑顔も。<br>
+      ぜんぶ、<span class="hi">ちゃんと届いています。</span>
+    </h2>
+    <p>
+      銀座から、さんぼん、Nコレ、そしてイオン北花田まで。<br>
+      走ってくれたこしき号（仮）と、沿道で手を振ってくれた皆さまのおかげで、<br>
+      前編はこんなに賑やかな記録になりました。
+    </p>
+    <p>
+      書ききれなかったエピソードは、これから少しずつメルマガやブログで綴っていきます。<br>
+      引き続き、後編もよろしくお願いいたします！
+    </p>
+
+    <div class="next-card">
+      <div class="lbl">COMING NEXT</div>
+      <div class="ttl">後編レポート、準備中</div>
+    </div>
+
+    <div class="signature">— こしきブリュワリー 一同</div>
+  </div>
+</section>
+
+<footer>
+  <div class="big-logo">KOSHIKI BREWERY</div>
+  <div class="sub">鹿児島県 / 甑島発クラフトビール</div>
+  <div class="credits">© KOSHIKI BREWERY — Tour Log Vol.01 / First Half</div>
+</footer>
+
+
+
+</body></html>
